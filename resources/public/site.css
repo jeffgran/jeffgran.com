@@ -1,0 +1,34 @@
+html,
+body {
+  background-color: #333846;
+  color: #e0e6ef;
+  font-family: Oxygen, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: normal;
+  color: #e0e6ef;
+  margin: 0.5em 0;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+ul {
+  list-style: disc outside none;
+  margin-left: 1em;
+}
+#content {
+  width: 960px;
+  margin: 0 auto;
+}
