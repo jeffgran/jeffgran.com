@@ -6,10 +6,11 @@
         [ring.adapter.jetty]
         [ring.middleware.file]
         [ring.util.response]
-        [hiccup core page-helpers])
+        [hiccup core page util])
 
   (:use static.config :reload-all)
   (:use static.io :reload-all)
+  (:use static.jg :reload-all)
   (:import (java.io File)
            (java.net URL)
            (org.apache.commons.io FileUtils FilenameUtils)
@@ -365,7 +366,9 @@
                                         (try
                                           (create)
                                           (catch Exception e
-                                            (warn (str "Exception thrown while building site! " e))))))))
+                                            (do
+                                              (warn (str "Exception thrown while building site! " e))
+                                              (.printStackTrace e))))))))
 
 (defn -main [& args]
   (let [[opts _ banner] (cli args
@@ -399,5 +402,6 @@
                     (browse-url "http://127.0.0.1:8080"))
           rsync (let [{:keys [rsync out-dir host user deploy-dir]} (config)]
                   (deploy-rsync rsync out-dir host user deploy-dir))
-          :default (println "Use --help for options.")))
-  (shutdown-agents))
+          :default (println "Use --help for options."))
+    (when (not watch)
+      (shutdown-agents))))
