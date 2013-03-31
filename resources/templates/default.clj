@@ -19,14 +19,20 @@
   [:link {:rel "stylesheet", :type "text/css", :href "/skeleton.css"}]
   [:link {:rel "stylesheet", :type "text/css", :href "/layout.css"}]
   [:link {:rel "stylesheet", :type "text/css", :href "/site.css"}]
+  [:link {:rel "stylesheet", :type "text/css", :href "/highlight.js/styles/solarized_dark.css"}]
 
+  
   ;; favicon
   [:link {:rel "shortcut icon", :href "images/favicon.ico"}]
   
-
+  ;; modernize old IEs
   "<!--[if lt IE 9]>"
   [:script {:src "http://html5shim.googlecode.com/svn/trunk/html5.js"}]
   "<![endif]-->"
+
+  ;; javascripts
+  [:script {:src "/highlight.js/highlight.pack.js"}]
+  [:script {:src "/site.js"}]
   
   ] ; /head
  
