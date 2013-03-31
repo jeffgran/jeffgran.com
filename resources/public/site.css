@@ -24,6 +24,13 @@ h5,
 h6 {
   text-shadow: 0.1em 0.1em 0.2em black;
 }
+a {
+  color: #c0c9ff;
+}
+a:hover,
+a:visited {
+  color: #d0d9ff;
+}
 ul {
   list-style: disc outside none;
   margin-left: 1em;

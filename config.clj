@@ -1,6 +1,6 @@
 [:site-title "Jeff Gran Site"
  :site-description "Stuff"
- :site-url "localhost:8080"
+ :site-url "http://localhost:8080"
  :in-dir "resources/"
  :out-dir "target/site"
  :default-template "default.clj"

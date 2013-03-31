@@ -4,7 +4,7 @@
         [cssgen]
         [hiccup core])
   (:use static.config :reload-all)
-  (:import (org.pegdown PegDownProcessor)
+  (:import (org.pegdown PegDownProcessor Extensions)
            (java.io File)
            (java.io InputStreamReader OutputStreamWriter)
            (org.apache.commons.io FileUtils FilenameUtils)))
@@ -25,7 +25,7 @@
   (let [[metadata content]
         (split-file (slurp file :encoding (:encoding (config))))]
     [(prepare-metadata metadata)
-     (delay (.markdownToHtml (PegDownProcessor.) content))]))
+     (delay (.markdownToHtml (PegDownProcessor. Extensions/ALL) content))]))
 
 (defn- read-html [file]
   (let [[metadata content]
