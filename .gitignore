@@ -6,3 +6,5 @@ classes
 .lein-deps-sum
 /target/
 TAGS
+.lein-repl-history
+jekyll-export*
