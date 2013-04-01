@@ -1,41 +1,118 @@
 // -*- less-css-compile-at-save: t; less-css-output-directory: "../public" -*-
 
-@text-color: #e0e6ef;
-@link-color: #c0c9ff;
-@hover-link-color: #d0d9ff;
-@background-color: #333846;
+@text-color: #c0c6cf;
+@link-color: #a6c5ff;
 
+@hover-link-color: #d0d9ff;
+
+@background-color: #333846;
+@hover-background-color: #434856;
+
+@footer-color: #131826;
+
+@line-height: 1.3em;
 
 html, body {
     background-color: @background-color;
     color: @text-color;
     font-family: Oxygen, sans-serif;
     font-size: 1.1em;
-    line-height: 1.2em;
+    line-height: @line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Julius Sans One", sans-serif;
     font-weight: normal;
     color: @text-color;
-    margin: 0.5em 0;
+    margin: 40px 0 20px;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-h2,h3,h4,h5,h6 {
-    text-shadow: 0.1em 0.1em 0.2em black;
+h5, h6 {
+    margin: 0.2em 0;
 }
 
 a {
     color: @link-color;
+    text-decoration: none;
+    text-shadow: 0.05em 0.05em 0.1em black;
 }
 a:hover,
 a:visited {
-    color: @hover-link-color;
+    color: @link-color;
+    text-decoration: underline;
 }
 
 ul {
     list-style: disc outside none;
     margin-left: 1em;
+    padding-left: 1em;
+}
+
+li {
+    line-height: @line-height;
+    p {
+        line-height: @line-height;
+    }
+}
+
+code {
+    font-family: Inconsolata, monospace;
+    background-color: #002b36;
+    color: #839496;
+}
+
+pre {
+    margin-bottom: 1em;
+}
+
+.jeff-gran {
+    font-family: "Lilita One", Arial, sans-serif;
+    position: relative;
+    text-transform: uppercase
+}
+
+#jeffgran {
+    height: 138px;
+    border-bottom: 1px solid @footer-color;
+}
+
+#jeff {
+    .jeff-gran;
+    font-size: 92px;
+    top: 32px;
+    left: 5px;
+    text-shadow: 1px 1px 15px #333846;
+    z-index: 100;
+    color: #434856;
+}
+
+#gran {
+    .jeff-gran;
+    font-size: 80px;
+    top: 81px;
+    left: -158px;
+    z-index: 99;
+    color: #232836;
+}
+
+#metadata {
+    @text-color: #737886;
+    margin-top: 110px;
+    color: @text-color;
+
+    p, li { margin-bottom: 0;}
+    .meta-heading {
+        color: @text-color;
+        float: left;
+    }
+    .meta-value { float: right; }
+    ul.tag-list {
+        .meta-value;
+        list-style: none;
+        line-height: 1.1em;
+    }
+    
 }
 
 #content {
@@ -43,3 +120,26 @@ ul {
     margin: 0 auto;
 }
 
+#footer {
+    border-top: 1px solid @footer-color;
+    margin: 2em 0;
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+        li {
+            float: right;
+            a {
+                display: block;
+                padding: 1em;
+                text-transform: lowercase;
+                text-decoration: none;
+                color: @footer-color;
+                text-shadow: none;
+            }
+            a:hover {
+                background-color: @hover-background-color;
+            }
+        }
+    }
+}

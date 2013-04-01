@@ -39,6 +39,10 @@
   [in out date]
   (.format (SimpleDateFormat. out) (.parse (SimpleDateFormat. in) date)))
 
+(defn publish-date [post]  
+  (re-find #"\d*-\d*-\d*" 
+           (FilenameUtils/getBaseName (str post))))
+
 (defn post-url 
   "Given a post file return its URL."
   [file]
@@ -156,14 +160,15 @@
                  (template
                   [{:title "Tags" :template (:default-template (config))}
                    (html
-                    [:h2 "Tags"]
-                    (map (fn[t]
+                    [:h1 "Archive by Tag"]
+                    (map (fn [t]
                            (let [[tag posts] t] 
-                             [:h4 [:a {:name tag} tag]
-                              [:ul
-                               (map #(let [[url title] %]
-                                       [:li [:a {:href url} title]]) 
-                                    posts)]]))
+                             (html
+                                [:h4 {:id tag} tag]
+                                [:ul
+                                 (map #(let [[url title] %]
+                                         [:li [:h5 [:a {:href url} title]]]) 
+                                      posts)])))
                          (tag-map)))])))
 
 ;;
@@ -186,16 +191,16 @@
      (= page 0) (list newer)
      :default (list older newer))))
 
+
 (defn snippet
   "Render a post for display in index pages."
   [f]
   (let [[metadata content] (read-doc f)]
     [:div [:h2 [:a {:href (post-url f)} (:title metadata)]]
      [:p {:class "publish_date"}  
-      (parse-date "yyyy-MM-dd" "dd MMM yyyy" 
-                  (re-find #"\d*-\d*-\d*" 
-                           (FilenameUtils/getBaseName (str f))))]
+      (parse-date "yyyy-MM-dd" "dd MMM yyyy" (publish-date f))]
      [:p @content]]))
+
 
 (defn create-latest-posts 
   "Create and write latest post pages."
@@ -301,7 +306,11 @@
        (write-out-dir 
         (str out-file "/index.html")
         (template 
-         [(assoc metadata :type :post :url (post-url f)) @content])))
+         [(assoc metadata
+            :type :post,
+            :url (post-url f),
+            :publish_date (publish-date f))
+          @content])))
     (list-files :posts))))
 
 (defn process-public 
@@ -401,6 +410,7 @@
           jetty (do (future (run-jetty serve-static {:port 8080}))
                     (browse-url "http://127.0.0.1:8080"))
           rsync (let [{:keys [rsync out-dir host user deploy-dir]} (config)]
+                  (log-time-elapsed "Build took " (create))
                   (deploy-rsync rsync out-dir host user deploy-dir))
           :default (println "Use --help for options."))
     (when (not watch)
