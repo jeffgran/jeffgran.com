@@ -386,8 +386,9 @@
                              ["--jetty" "View Site." :default false :flag true]
                              ["--watch" "Watch Site and Rebuild on Change." :default false :flag true]
                              ["--rsync" "Deploy Site." :default false :flag true]
+                             ["--draft" "Create new draft post." :default false :flag true]
                              ["--help" "Show help" :default false :flag true])
-        {:keys [build tmp jetty watch rsync help]} opts]
+        {:keys [build tmp jetty watch rsync draft help]} opts]
 
     (when help
       (println "Static")
@@ -409,6 +410,7 @@
                     (browse-url "http://127.0.0.1:8080"))
           jetty (do (future (run-jetty serve-static {:port 8080}))
                     (browse-url "http://127.0.0.1:8080"))
+          draft (write-draft)
           rsync (let [{:keys [rsync out-dir host user deploy-dir]} (config)]
                   (log-time-elapsed "Build took " (create))
                   (deploy-rsync rsync out-dir host user deploy-dir))

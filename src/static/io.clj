@@ -7,7 +7,8 @@
   (:import (org.pegdown PegDownProcessor Extensions)
            (java.io File)
            (java.io InputStreamReader OutputStreamWriter)
-           (org.apache.commons.io FileUtils FilenameUtils)))
+           (org.apache.commons.io FileUtils FilenameUtils)
+           (java.text SimpleDateFormat)))
 
 (defn- split-file [content]
   (let [idx (.indexOf content "---" 4)]
@@ -102,6 +103,21 @@
 (defn write-out-dir [file str]
   (FileUtils/writeStringToFile
    (File. (:out-dir (config)) file) str (:encoding (config))))
+
+(defn write-draft []
+  (let [filename (str
+                  (.format (SimpleDateFormat. "yyyy-MM-dd") (java.util.Date.))
+                  ".md")]
+    (FileUtils/writeStringToFile
+     (File. "resources/drafts" filename)
+     "---
+title: 
+tags:
+author: Jeff Gran
+---
+"
+     (:encoding (config)))
+    (println (str "Generated resources/drafts/" filename))))
 
 (defn deploy-rsync [rsync out-dir host user deploy-dir]
   (let [cmd [rsync "-avz" "--delete" "--checksum" "-e" "ssh"

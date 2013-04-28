@@ -1,0 +1,5 @@
+* TODO write post generator
+** TODO and figure out how to make "draft" posts. maybe just rename w/ _ at beginning?
+* TODO add screenshot to jg-quicknav post
+* new post
+** [[file:posts.org::*Post%20ideas][Post ideas]]
