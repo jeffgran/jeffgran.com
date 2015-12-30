@@ -3,11 +3,11 @@ title: Jeff Gran
 ---
 # Just the Basic Facts
 
-I'm Jeff.
+Hi, I'm Jeff.
 
 * I love writing code. I put some of the stuff I write on [github][].
 * I love open source software.
-* I used to love [javascript][]. Now I love [ruby][]. I think my next new love is about to be lisp/[clojure][].
+* I love [javascript][] and [ruby][], but that's just because those are what I have been exposed to the most.
 * I have a passion for elegant, efficient user interfaces.
 * I love customizing my personal user interface to my computer, so I basically use [emacs][] and [conkeror][] for everything I do.
 * I also make art of various media: music, drawings, design, etc.
