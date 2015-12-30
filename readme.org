@@ -1,1 +1,7 @@
 See http://nakkaya.com/static.html for documentation.
+
+Deploy:
+$ lein run --rsync
+
+Help:
+$ lein run --help
