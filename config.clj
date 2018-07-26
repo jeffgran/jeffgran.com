@@ -10,6 +10,6 @@
 
  :rsync "/usr/bin/rsync"
  :user "jeffgran"
- :host "practice-love.com"
+ :host "jeffgran.com"
  :deploy-dir "/home1/jeffgran/www"
  ]
