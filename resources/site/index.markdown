@@ -7,7 +7,7 @@ I'm Jeff.
 
 * I love writing code. I put some of the stuff I write on [github][].
 * I love open source software.
-* I ~love~ like [javascript][] and [ruby][], but that's just because those are what I have been exposed to the most.
+* I ~~love~~ like [javascript][] and [ruby][], but that's just because those are what I have been exposed to the most.
 * I also program to varying degrees in Python, Java, Scala, Clojure, Lisp (emacs flavored), Elixir, Rust, C++.
 * I have strong opinions about how I want to interact with my computer (keyboard only, when possible), so I use highly customized [emacs][] and [conkeror][] for most everything I do.
 * I'm a web developer, but I want to transition into cyber-security work, specifically [applied cryptography](/2018/04/08/applied-cryptography/).
