@@ -31,26 +31,15 @@ So I've decided to spend my free time studying this stuff so that I can start co
 
 For that purpose, below is my self-selected curriculum to get myself up to speed on the things I'll need to know to make this transition. I'll keep this updated with my progress and changes/removals/additions to the list.
 
-### C++
-
-C++ seems to be the lingua franca of cryptography so I need to get a little more familiar with it.
-
-- [Book: "Accelerated C++" by Andrew Koenig and Barbara E. Moo](http://libertar.io/lab/wp-content/uploads/2017/03/Andrew-Koening-and-Barbara-E.-Moo-Accelerated-C-.pdf)
-  - I was looking for a book that would teach me C++ without wasting my time teaching me what a variable is. This seems to fit the bill!
-  - In Progress
-
-### Networking and Network Security
-
-I want to brush up on the details of network protocols and network security. I know enough to do my job as a web developer, but I want to study the details more closely.
-
-- [Coursera 4-course "Specialization": "Computer Communications" by University of Colorado](https://www.coursera.org/specializations/computer-communications)
-- [Coursera 4-course "Specialization": "Fundamentals of Computer Network Security" by University of Colorado](https://www.coursera.org/specializations/computer-network-security)
 
 ### Math and Computer Science
     
 I want to have a deeper understanding of the math behind cryptography.
 
 - **MIT Backround Math**
+  - ~~*[Mathematics for Computer Science (MIT OpenCourseWare)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/)*~~
+    - Finished. 
+    - Includes primers on proofs, discrete math, DAGs and trees, counting, probability, etc.
   - ~~*[Single Variable Calculus (MIT OpenCourseWare)](https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/syllabus/)*~~
     - Finished (3/5 units, skipped advanced integration stuff because I don't think I need it for cryptography)
   - ~~*[Multivariate Calculus (MIT OpenCourseWare)](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/Syllabus/)*~~
@@ -59,27 +48,40 @@ I want to have a deeper understanding of the math behind cryptography.
   - [Complex Algebra](https://brilliant.org/courses/complex-algebra/#course-map-modal)
   - [Number Theory](https://brilliant.org/courses/basic-number-theory/)
   - [Group Theory](https://brilliant.org/courses/group-theory/)
-- **Elliptic Curves and Galois Fields**
-  - I haven't been able to find a good, straightforward online course or book about these specific topics. I'm open to suggestions.
 - **Probability**
   - [Statistics 110: Introduction to Probability by Harvard/edX](https://www.edx.org/course/introduction-to-probability-0)
-  
-
+- **Elliptic Curves and Galois Fields**
+  - I haven't been able to find a good, straightforward online course or book about these specific topics. I'm open to suggestions.
 
 ### Cryptography
 
 Cryptographic methods, protocols, history, etc. The meat.
 
-- **[Coursera 4-course "Specialization": "Introduction to Applied Cryptography" by University of Colorado](https://www.coursera.org/specializations/introduction-applied-cryptography)** 
+- **~~[Coursera 4-course "Specialization": "Introduction to Applied Cryptography" by University of Colorado](https://www.coursera.org/specializations/introduction-applied-cryptography)~~ -- Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/specialization/SMHX4NSHFSRD)**
   - ~~Classical Cryptosystems and Core Concepts~~
     - Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/records/UF2XEQPE8FXB)
   - ~~Mathematical Foundations for Cryptography~~
     - Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/records/DCQ7NTC24G2Q)
   - ~~Symmetric Cryptography~~
     - Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/records/CNJGHDR8E93M)
-  - Asymmetric Cryptography and Key Management
-    - In Progress
+  - ~~Asymmetric Cryptography and Key Management~~
+    - Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/records/VK7MERCJXFGK)
 - [Book: Serious Cryptography by Jean-Philippe Aumasson](https://nostarch.com/seriouscrypto)
   - In Progress
 - [Coursera course: Cryptography I by Stanford University (Dan Boneh)](https://www.coursera.org/learn/crypto)
   - I've read a lot of people saying this is a great class. I assume it's a little more in-depth than the University of Colorado introduction, so I wanted to take that series first so that I'd have some basic understanding before I dive into this more difficult one.
+
+### C++
+
+C++ seems to be the lingua franca of cryptography so I need to get a little more familiar with it.
+
+- [Book: "Accelerated C++" by Andrew Koenig and Barbara E. Moo](http://libertar.io/lab/wp-content/uploads/2017/03/Andrew-Koening-and-Barbara-E.-Moo-Accelerated-C-.pdf)
+  - In Progress
+  - I was looking for a book that would teach me C++ without wasting my time teaching me what a variable is. This seems to fit the bill!
+
+### Networking and Network Security
+
+I want to brush up on the details of network protocols and network security. I know enough to do my job as a web developer, but I want to study the details more closely.
+
+- [Coursera 4-course "Specialization": "Computer Communications" by University of Colorado](https://www.coursera.org/specializations/computer-communications)
+- [Coursera 4-course "Specialization": "Fundamentals of Computer Network Security" by University of Colorado](https://www.coursera.org/specializations/computer-network-security)
