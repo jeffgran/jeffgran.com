@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<rss version="2.0"><channel><title>Jeff Gran</title><link>http://jeffgran.com</link><description>Jeff Gran's Personal Site</description><item><title>My Self-Study Plan for Applied Cryptography</title><link>http://jeffgran.com/2018/04/08/applied-cryptography/</link><description><h1>My interest in Cryptography</h1><p>I&rsquo;ve become increasingly interested in steering my career towards cryptography. Two applications of cryptography especially interest me:</p>
+<ul>
+  <li>privacy</li>
+  <li>cryptocurrency</li>
+</ul><p>TL;DR I&rsquo;m teaching myself this stuff with the list at the bottom.</p><h2>Privacy</h2><p>There were headlines recently that Facebook has all this data on its users. Most everyone I know in software development were surprised only that other people were surprised. Of course Facebook (and Google, and Amazon, and Twitter, and every big &ldquo;free&rdquo; web application that exists) are harvesting data about you to sell to each other and to others, leading to a prominent culture of psychological manipulation based on data about you.</p><p>Anyway everyone knows that. It&rsquo;s how the world works. But it doesn&rsquo;t have to be. Anonymity is a value I hold and that I think more would hold if it were available to them. It&rsquo;s just simply not available, in a lot of cases. </p><p>Facebook messenger is listening to your conversations. Signal messenger, by Open Whisper Systems uses one of the most sophisticated cryptographic protocols invented is just as easy to use as Facebook messenger but is completely private, end-to-end encrypted so that you can digitally &ldquo;whisper&rdquo; to your friends and family. I fundamentally believe that I have the right to communicate in private without eavesdroppers, but it&rsquo;s surprisingly rare to be able to do that in today&rsquo;s internet, and I want to dedicate my working life to helping make that possible (and easy!) for the average joe.</p><h2>Cryptocurrency</h2><p>Everyone has heard of Bitcoin by now. I was a relatively early adopter and have moved on to other currencies now, but I still believe in the idea. The cool thing about cryptocurrency is the cryptographic proof of the public ledger. There&rsquo;s no such thing as counterfeit on the blockchain. Proof of Work works because of the &ldquo;hard problem&rdquo; vs &ldquo;simple problem&rdquo;, in the same way that asymmetric cryptography does. You can&rsquo;t fake that you did the work to find a one-way hash of the transactions in the block. There&rsquo;s a part of my that revels in provable correctness and I like the blockchain because it has this, while traditional money does not. I have no idea what amount of dollars the Federal Reserve is creating out of thin air this month, and the only reason to believe that my bank is not scamming me is the government &ldquo;manually&rdquo; enforcing good behavior. I think the former is superior to the latter and I&rsquo;d like to contribute to the future of this all-important system in society.</p><h2>Self-study</h2><p>So I&rsquo;ve decided to spend my free time studying this stuff so that I can start contributing to one or both of those two applications of cryptography which I think will make the world a better place. There are a lot of things I have to learn. Even though I&rsquo;ve been a software developer for about 10 years now, there are a lot of sub-disciplines with which I am rusty. </p><p>For that purpose, below is my self-selected curriculum to get myself up to speed on the things I&rsquo;ll need to know to make this transition. I&rsquo;ll keep this updated with my progress and changes/removals/additions to the list.</p><h3>C++</h3>
+<ul>
+  <li>&ldquo;Accelerated C++&rdquo; by Andrew Koenig and Barbara E. Moo</li>
+  <li>In Progress</li>
+</ul><h3>Networking</h3><h3>Math and Computer Science</h3>
+<ul>
+  <li>Single Variable Calculus</li>
+  <li>Finished (3/5 units, skipped advanced integration stuff because I don&rsquo;t think I need it for cryptography)</li>
+  <li>Multivariate Calculus</li>
+  <li>In progress (just the first unit, about background on vectors/matrices)</li>
+</ul><h3>Applied Cryptography</h3></description></item><item><title>Maine just showed us how to fix our elections</title><link>http://jeffgran.com/2016/10/9/ranked-choice-voting/</link><description><h1>Maine just showed us how to fix our elections</h1><h2>Instant Runoff</h2><p>Did you feel like in this election you were forced to choose between the &ldquo;lesser of two evils&rdquo;?</p><p>Do you feel like the two major parties, Republicans and Democrats, hold our government hostage by forcing you to either &ldquo;waste your vote&rdquo; on a third party candidate or to vote on the party line?</p><p>I did, and I do in every election. And in my opinion, the most important thing that happened in yesterday&rsquo;s election was Maine&rsquo;s &ldquo;Question 5&rdquo;, in which the state voted to institute a superior voting system that will fix the above problems, which in turn will give us a more perfect democracy in which all votes truly count.</p><p>Maine voted to start using the so-called &ldquo;Instant-Runoff Voting&rdquo; or &ldquo;Ranked Choice Voting&rdquo;, which means that instead of choosing only one candidate, you rank your choices in order of preference. Sounds simple but it has world-changing ramifications. It means that you can safely vote based on your TRUE feelings, without worrying about wasting your vote.</p><h2>Example</h2><p>Say for example you write in Jon Stewart as your first choice, select Ron Paul as your second, Arnold Schwarzenegger as your third, and Jesse Ventura as fourth and last. This is the &ldquo;ranked choice&rdquo;.</p><p>They count all the first choice votes. Jon Stewart, your write-in candidate, got only a few votes. So he is eliminated, and any ballots that had him as first are now counted again with their second choice. This is the &ldquo;Instant Runoff&rdquo;. Importantly, if you ONLY wrote in that one choice (you don&rsquo;t have to choose more than one if you don&rsquo;t want to), then now your vote doesn&rsquo;t count for anyone. So it makes more sense to rank as many candidates as possible.</p><p>So now they count the vote again. Ron Paul gets a respectable 35% of the remaining vote. That&rsquo;s not a majority of the remaining vote, so Paul is thrown out of the race, and anyone who chose Paul as their top vote in that round (including you, in this scenario), gets re-counted with their next choice.</p><p>Let&rsquo;s say some people only voted for Paul, and that&rsquo;s it. Their votes no longer count in this scenario. This is the part that opponents deride about this system. They say that it&rsquo;s unfair to those people. I mathematically disagree because in this scenario, your vote has had TWO chances to count, and COULD have had more if you had chosen to make more choices. So it&rsquo;s really up to each voter how much of a chance they want to give their vote to count. In the standard voting system we all use, your vote is thrown out instantly if it doesn&rsquo;t agree with the plurality[1].</p><p>So now they count the next round of votes, and of the two candidates remaining, Arnold gets 60% of the remaining votes. So Arnold wins. Maybe he would have won anyway, in a &ldquo;normal&rdquo; system. But Ron Paul would have gotten close to 0% of the vote because of the fear of vote-wasting. In this scenario, he got 35%.</p><p>Then again, maybe Arnold would have lost because of &ldquo;spoiler&rdquo; candidates, in a &ldquo;normal&rdquo; system. But in this, more fair, scenario he got elected by being the most preferable among the various ranked options delcared by the voters.</p><h2>Fallout</h2><p>The most important part about this is that it frees us from the tyranny of the two-party system. The two-party system evolved as the primary strategy for garnering power because it is clearly the best strategy in our current voting system. It is a product of our voting system. A third party will never be viable under our voting system because the it is designed such that the two-party system is the only winning strategy. In order to free ourselves, we have to change the voting system.</p><p>Maine has led the way. This is akin to Vermont being the first state to legalize gay marriage, or Colorado being the first state to legalize marijuana. Maine is the first to fix the voting system, and it should sweep the country in the coming years. We should watch what happens there closely, and if the opportunity to change the voting system in my city, state, or country ever comes up, I will jump at the chance to vote &ldquo;Yes&rdquo;.</p><p>[1] Plurality is different from majority. Our current system is a plurality system, not a majority system. Did you notice that the final vote count in a lot of states and even in the country was something like 48% to 49%? 49% is not a majority, but since it is more than 48%, it is a plurality.</p></description></item><item><title>Resume 2016</title><link>http://jeffgran.com/2015/12/29/resume/</link><description><h2>Profile</h2>
+<ul>
+  <li>Problem solver, fast learner, fetish for accuracy and correctness, technology agnostic</li>
+</ul><h2>Languages/Technologies</h2>
+<ul>
+  <li>Ruby</li>
+  <li>Javascript</li>
+  <li>MySQL</li>
+  <li>HTML/CSS</li>
+  <li>HBase</li>
+  <li>Lucene/Solr</li>
+  <li>Redis</li>
+  <li>Linux/unix/bash</li>
+  <li>Emacs/elisp</li>
+</ul><h2>Experience:</h2><h3>Software Developer, OpenLogic Software &ndash; 2010-Present</h3><p>I started as an intern contracted to do a custom Wordpress theme for a marketing site. While working on that, I taught myself Ruby and Rails since that&rsquo;s what they were using. I impressed the team enough to get hired full time as a Rails developer. Then I worked my way up to the Tech Lead position, leading the small team of developers through the day-to-day design decisions and architectural directions.</p><p>I worked on multiple Rails apps from gigantic (legacy) to small (<code>rails new</code>) and single purpose, from rails v2.3 through rails 4.0</p>
+<ul>
+  <li>Ruby on Rails application development</li>
+  <li>Front-end html/css/javascript development (and some visual and UX design work)</li>
+  <li>Cloud technology development using AWS/EC2, Rackspace, Chef, Fog, etc.</li>
+  <li>NoSQL integration with multiple MySQL rails apps (Hadoop &amp; HBase, Solr, Redis)</li>
+</ul><h3>Front end designer/developer (Intern), TrigPoint Solutions &ndash; 10/2009-2/2010</h3>
+<ul>
+  <li>Designed user interfaces with photoshop</li>
+  <li>Implemented user interfaces using HTML/CSS/Javascript (jQuery)</li>
+  <li>Wrote custom reusable jQuery plugins for interface elements</li>
+</ul><h3>Lead Artist, Coccinella Development &ndash; 2004-2009</h3><p>Coccinella was an independent game development company of 3 people. I was the artist.</p><p>I did 3D artwork, user interface design, and UI coding in the Torque Game Engine&rsquo;s proprietary scripting language called TorqueScript (a c-like language, with functions and curly braces, etc.).</p><h2>Education</h2>
+<ul>
+  <li>Savannah College of Art and Design, Savannah, Georgia &ndash; B.F.A. Computer Arts, 2003</li>
+</ul></description></item><item><title>Bitcoin</title><link>http://jeffgran.com/2014/03/30/bitcoin/</link><description><h1>Bitcoin</h1><p>This is just a &ldquo;note to self&rdquo;. My cold storage bitcoin address is <a href="https://blockchain.info/address/1Fx2J1inrej8sRgZMc68v3QiuZtqkEEaJN" title="1Fx2J1inrej8sRgZMc68v3QiuZtqkEEaJN">1Fx2J1inrej8sRgZMc68v3QiuZtqkEEaJN</a>. Maybe I&rsquo;ll be rich some day, or maybe I&rsquo;m just ahead of the crowd on the new paradigm for payment technology, or maybe I&rsquo;m a fool. Time will tell.</p></description></item><item><title>My New Garage</title><link>http://jeffgran.com/2013/10/27/garage-pictures/</link><description><h1>My New Garage</h1><p>I like building things. For work I build virtual things, but recently I decided to build some stuff in my garage. I wish I had &ldquo;before&rdquo; pictures, but I don&rsquo;t. But, here are the &ldquo;after&rdquo; pictures.</p><p>I painted the walls (with help from my girlfriend Annie G), built the shelves and the work bench, mounted the peg-board and hung all the tools and skis and stuff on the wall.</p><p>The plan was to have a lot of storage space, and my work space out there, but with no clutter on the floor, and with plenty of room to walk around the cars and open the doors. Thus the high shelves all the way around.</p><p><img src="/images/garage/overall1.JPG"  alt="Overall"/></p><p><img src="/images/garage/panoram1.JPG"  alt="Panorama"/></p><p><img src="/images/garage/panoram2.JPG"  alt="Panorama"/></p><p><img src="/images/garage/panoram3.JPG"  alt="Panorama"/></p><p><img src="/images/garage/panoram4.JPG"  alt="Panorama"/></p><p><img src="/images/garage/panoram5.JPG"  alt="Panorama"/></p><p><img src="/images/garage/panoram6.JPG"  alt="Panorama"/></p><p><img src="/images/garage/worklight1.JPG"  alt="Nightlight"/></p></description></item><item><title>Reset rubygems' internal cache of known gems after maniuplating $LOAD_PATH</title><link>http://jeffgran.com/2013/05/01/rubygems-reset-known-gemspec-cache/</link><description><h1>Reset rubygems&rsquo; internal cache of known gems after maniuplating $LOAD_PATH</h1><p>When you require something via rubygems for the first time, it creates a list of &ldquo;all known gem specficiations&rdquo;, meaning <code>.gemspec</code> files.</p><p>If you add something to the <code>$LOAD_PATH</code> that has more gems in it (in my case, this was a jar, because I&rsquo;m in jruby at the moment), the new <code>.gemspec</code> files are in the new path are not known by rubygems, and it has the &ldquo;all&rdquo; set cached. You can see the cache with:</p>
+<pre><code class="ruby">`Gem::Specification.class_variable_get(:@@all)`
+</code></pre><p>Here&rsquo;s how you can reset it after adding to the <code>$LOAD_PATH</code>:</p>
+<pre><code class="ruby">Gem::Specification.reset
+</code></pre><p>This took me a few hours to figure out, so maybe this post will help someone.</p></description></item><item><title>Introducing jg-quicknav</title><link>http://jeffgran.com/2013/04/02/introducing-jg-quicknav/</link><description><h1>Introducing jg-quicknav</h1><h2>What</h2><p><code>`jg-quicknav&#39;</code> is an emacs plugin for navigating the file system and opening files. It also connects with <code>`dired&#39;</code> and soon with <code>`shell-mode&#39;</code> as well.</p><p>I&rsquo;ve been using it all day every day for a month or so and I love it, so hopefully it will be useful to someone else too. It&rsquo;s the first real emacs package I&rsquo;ve written.</p><h2>Why</h2><p>I like <code>`ido-find-file&#39;</code> but I don&rsquo;t like how it&rsquo;s in the minibuffer. You can&rsquo;t see the full set of your options at once, and it&rsquo;s hard to keep track of when you &ldquo;wrap around&rdquo; to the beginning again.</p><p>I want a file-open dialog that is as fast as possible (fuzzy-matching, <code>RET</code> to select a file/dir), so I made one. I tried to make it extendable and pretty too.</p><h2>How</h2><p>The code is available on <a href="http://github.com/jeffgran/jg-quicknav">github</a>. Get it into your <code>load-path</code> somewhere and require it with <code>(require &#39;jg-quicknav)</code>.</p><p>Then you&rsquo;ll need to assign a key to it. I use something like this:</p>
+<pre><code class="lisp">(define-key my-favorite-key-map (kbd &quot;C-o&quot;) &#39;jg-quicknav)
+</code></pre><p>Substitute your favorite keymap (<code>`global-map&#39;</code> if you must) and key sequence.</p><p>Once you enter <code>`jg-quicknav&#39;</code> mode, use <code>C-n</code> and <code>C-p</code> to move your selection up and down, and <code>RET</code> to open a file or drill-down into a directory. <code>C-g</code> quits.</p><p>Use <code>C-,</code> to go &ldquo;back&rdquo;, or up a directory, and <code>C-.</code> to go &ldquo;forward&rdquo; or down a directory. The &ldquo;forward&rdquo; command only works after going &ldquo;back&rdquo; in the same session.</p><p>You can also hit <code>C-/</code> to enter <code>`dired&#39;</code> while jg-navigating.</p><h2>Customizing</h2><p>I assume you&rsquo;ll want to change the key bindings that are in play when quick-navigating, so I made a mode map that you can edit however you like. For example, to change the dired binding to <code>C-x d</code>, do this:</p>
+<pre><code class="lisp">(define-key jg-quicknav-mode-map (kbd &quot;C-x d&quot;) &#39;jgqn-dired)
+</code></pre><p>See the source code at <a href="http://github.com/jeffgran/jg-quicknav">github</a> for more detail.</p></description></item><item><title>New Static Site</title><link>http://jeffgran.com/2013/03/31/new-static-site/</link><description><h1>New Static Site</h1><p>I just migrated from WordPress to a staticly-generated site, using a nifty little site generator called &ldquo;<a href="http://nakkaya.com/static.html">static</a>&rdquo; written in <a href="/tags/index.html#clojure">clojure</a>.</p><p>I&rsquo;ve really fallen in love with lisp lately, and since clojure is the hot new lisp dialect I thought I&rsquo;d find an excuse to learn and use it. So here we are.</p><p>My templates are now written in clojure (hiccup), and my posts and pages are written in markdown. It&rsquo;s a beautiful thing, because now I can write my posts in markdown inside <a href="/tags/index.html#emacs">emacs</a></p><p>My favorite thing about clojure so far might be <a href="https://github.com/weavejester/hiccup">hiccup</a>, which is an html-generation library. It lets you write html structure with a lisp-y nested syntax.</p><p>This turns out to work perfectly. HTML is a nested tree structure with a verbose and annoying syntax, and clojure code is a nested tree structure with a simple and easily-manipulable syntax. Here&rsquo;s an example of some hiccup code (the &ldquo;meat&rdquo; part of my new page template):</p>
+<pre><code class="clojure">(html [:body
+        [:div#content.container
+         [:div.row
+          [:div.twelve.columns.alpha
+           content]
+          [:div#jeffgran.four.columns.omega
+           [:span#jeff &quot;Jeff&quot;]
+           [:span#gran &quot;Gran&quot;]
+           [:div.clear]
+           (jg-meta metadata)]]
+
+         [:div.row
+          [:div#footer.sixteen.columns
+           [:ul
+            [:li [:a
+                  {:href &quot;http://github.com/jeffgran/jeffgran.com&quot;}
+                  &quot;Source&quot;]]
+            [:li [:a {:href &quot;/tags/index.html&quot;} &quot;By Tag&quot;]]
+            [:li [:a {:href &quot;/archive.html&quot;} &quot;By Date&quot;]]
+            [:li [:a {:href &quot;/index.html&quot;} &quot;Front&quot;]]]]]]])
+</code></pre><p>Anyway, this makes it so much easier to update my site (just write a new markdown file and run <code>lein run --rsync</code>) that hopefully I&rsquo;ll update more often when I have a thought to put down.</p></description></item><item><title>Quick Tip: Bash Script for Running RSpec Tests Under Rails</title><link>http://jeffgran.com/2011/10/11/quick-tip-bash-script-for-running-rspec-tests-under-rails/</link><description><h1>Quick Tip: Bash Script for Running RSpec Tests Under Rails</h1><p>This will be specific to our particular setup but could easily be adapted for other similar use cases.</p><p>Basically, I got tired of typing:</p>
+<pre><code class="bash">$ rake spec SPEC=spec/acceptance/path/to/file.rb SPEC_OPTS=&#39;--line 42&#39;
+</code></pre><p>…in order to re-run a single test after attempting to fix it. The rspec output gives a stack trace that shows the file/line number the failure occured on, like this:</p>
+<pre><code class="bash">./spec/acceptance/path/to/file.rb:42
+</code></pre><p>So I made a bash script that lets me just copy that line and then run </p>
+<pre><code class="bash">$ test [pasted line]
+</code></pre><p>and it will run the test again. Here it is:</p>
+<pre><code class="bash">function test() {
+   local a1=&quot;$1&quot;
+   local a2=&quot;$2&quot;
+   if [[ $1 == *:* ]]; then
+     arr=(${1//:/ }); a1=&quot;${arr[0]}&quot;
+     a2=&quot;${arr[1]}&quot;
+   fi
+   local spec=&quot;$a1&quot;
+   if [ -n &quot;$a2&quot; ]; then local opts=&quot;--line ${a2}&quot;; fi;
+   if [ -z &quot;$opts&quot; ]; then
+     echo rake spec SPEC=${spec}
+     bundle exec rake spec SPEC=${spec}
+   else
+     echo rake spec SPEC=${spec} SPEC_OPTS=&quot;${opts}&quot;
+     bundle exec rake spec SPEC=${spec} SPEC_OPTS=&quot;${opts}&quot;
+   fi
+}
+</code></pre></description></item><item><title>Bootstrapping an Ubuntu Server on Rackspace Using Cloud-Init and Fog</title><link>http://jeffgran.com/2011/08/19/ubuntu-cloud-init-rackspace-fog-ruby/</link><description><h1>Bootstrapping an Ubuntu Server on Rackspace Using Cloud-Init and Fog</h1><p>Recently at work I needed to figure out how to bootstrap a server image on Rackspace, preferably using Ubuntu’s Cloud-Init package since we already had that working on EC2.</p><p>I couldn’t find a single person who had done this before, so after struggling for a day or two and finally figuring out that it does indeed work (and it turns out to be pretty simple) I thought I would share the knowledge on how to do it.</p><h3>Set up the Machine Image</h3><p>EC2 has ready-made Ubuntu images with Cloud-Init already installed, but for Rackspace the first thing you need to do is create a similar image. All we did was to get a stock Ubuntu image (11.04) and run <code>apt-get install cloud-init</code> on it.</p><p>That’s it. Then just save out that image to your account.</p><h3>Bootstrap the Image with Fog</h3><p>Note: We’re using Ruby, so we can use the awesome <a href="https://github.com/geemus/fog">Fog gem</a> as a wrapper around the <a href="http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/Create_Server-d1e1937.html">Rackspace REST API</a>, but you could also accomplish the same thing with the raw API.</p><p>A couple of notes, and then I’ll show the code:</p>
+<ul>
+  <li>We are generating an SSH key-pair to initialize the server with. This is not strictly required, but if you don’t do this, you must save the password attribute of the returned server object on the initial create call. Subsequent queries against the server will not return the password for security reasons.</li>
+</ul>
+<ul>
+  <li>The <code>personality</code> field is the crux of this process. It allows you to send up to 5 files to be put on the server in a location of your choosing at boot time. It turns out that this can be used to &ldquo;seed&rdquo; cloud-init with the files it needs, mimicking the <code>user-data</code> field you would pass to EC2. Note that the path to the file you supply does not have to exist on the image. Rackspace will create the directories for you if they don&rsquo;t.</li>
+</ul>
+<ul>
+  <li>The path where you put the files is also important. In the code below the <code>/nocloud-net/</code> part of the path can be interchanged with a few others, though I’m not sure what some of them mean. Don’t quote me on this, but I believe that <code>/nocloud/</code> is supposed to mean that you’re not in the cloud, and <code>/nocloud-net/</code> is the same, except that you are guaranteed that you will have a connection to the internet when it runs (a little bit later in the boot process than <code>nocloud</code>). But we can hijack either one for our use in seeding cloud-init.</li>
+</ul>
+<ul>
+  <li>Very important: you must supply BOTH the <code>user-data</code> and the <code>meta-data</code> files in order for cloud-init to run. In EC2, <a href="http://bazaar.launchpad.net/~cloud-init-dev/cloud-init/trunk/view/head:/doc/examples/seed/meta-data">the meta-data file</a> has a bunch of EC2-specific data in it (and some generic data, to be fair), but I found that we didn’t need any of that data and the defaults worked fine. But you still have to create that file, and an empty string doesn’t work (the file doesn’t get created), which is why we have specified a single space for the contents of the file.</li>
+</ul>
+<ul>
+  <li>The <code>user-data</code> file can be any type of file that cloud-init normally expects, including the multi-part format, so you can include multiple files that way. The code below shows how we compiled some files from the local file system into a multipart document (each with the appropriate <code>#</code> or <code>#!</code> header). See the <a href="https://help.ubuntu.com/community/CloudInit">cloud-init documentation</a> for more info.</li>
+</ul>
+<pre><code class="ruby"># get a handle to the fog compute abstraction
+compute_adapter = Fog::Compute.new({
+  provider: &quot;Rackspace&quot;,
+  rackspace_api_key: &quot;&quot;,
+  rackspace_username: &quot;&quot;
+})
+ 
+# generate the ssh key-pair
+keys = SSHKey.generate
+ 
+# let&#39;s make a multi-part document
+scripts = MIME::MultipartMedia::Mixed.new
+ 
+# assuming `files` is an array of File objects corresponding
+# to real, properly formatted cloud-init script files
+files.each do |f| do
+  scripts.add_entity(MIME::TextMedia.new(file, &quot;text/plain&quot;))
+end
+ 
+compute_adapter.servers.bootstrap({
+  image_id: 39,
+  flavor_id: 1,
+  name: &quot;A Name for the Server&quot;,
+  personality: [
+    {
+      &#39;path&#39; =&gt;
+        &#39;/var/lib/cloud/seed/nocloud-net/user-data&#39;,
+      &#39;contents&#39; =&gt; scripts.to_s
+    },{
+      &#39;path&#39; =&gt;
+        &#39;/var/lib/cloud/seed/nocloud-net/meta-data&#39;,
+      &#39;contents&#39; =&gt; &#39; &#39;
+    }
+  ],
+  public_key: keys.ssh_public_key,
+  private_key: keys.private_key
+)
+</code></pre><h3>Helpful links:</h3>
+<ul>
+  <li><a href="https://code.launchpad.net/~cloud-init-dev/cloud-init/trunk">Cloud-init project with source code browser (including example files)</a></li>
+  <li><a href="http://fog.io/0.10.0/rdoc/Fog/Compute/Rackspace/Server.html">Fog Documentation</a></li>
+  <li><a href="https://github.com/bensie/sshkey">sshkey gem used to generate the proper type of keys</a></li>
+</ul></description></item></channel></rss>
