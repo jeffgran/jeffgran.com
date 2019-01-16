@@ -9,7 +9,7 @@ tags: PHP WordPress
 
 ### UPDATE: I have written a new post about how to better accomplish this task: [WordPress: Sort Posts by Multiple Fields (Part II)][1]
 
- [1]: http://jeffgran.com/262/blog/wordpress-sort-posts-by-multiple-fields-part-ii
+ [1]: /262/blog/wordpress-sort-posts-by-multiple-fields-part-ii
 
 Please see the above link for a much more efficient way to sort by multiple fields. This page is left for historical and educational purposes.
 

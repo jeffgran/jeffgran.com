@@ -9,7 +9,7 @@ tags: AJAX javascript jQuery PHP Web
 
 ![Ajax Convo][1]
 
- [1]: http://jeffgran.com/img/ac.jpg "ac"
+ [1]: /img/ac.jpg "ac"
 
 1.  I’m learning object-oriented design, design patterns, object-oriented PHP, and object-oriented JavaScript right now.
 
@@ -43,6 +43,6 @@ I’ve also built a class structure that I believe will help me expand the proje
 *   More to each message, like time/date of post, “last edited at…”, etc.
 *   Maybe a simple user system. I loathe to make people “sign up” for things though.
 
-If you’re interested, you can download the files [here][2].
+If you’re interested, you can see the code [here][2].
 
- [2]: http://jeffgran.com/stuff/ac.zip "Ajax Convo Zip File"
+ [2]: https://github.com/jeffgran/ajax-convo "Ajax Convo Github Repo"

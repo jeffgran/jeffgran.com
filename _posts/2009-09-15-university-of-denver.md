@@ -7,9 +7,11 @@ tags: announcement
 ---
 # University of Denver
 
-![DU Logo][1]Yesterday was my first day of classes at the University of Denver. I’m entering into the Information and Communications Technology program. I’m excited to start learning, and it’s interesting (and validating my decision) that I’m already learning things that I never even knew I needed to know.
+![DU Logo][1]
 
- [1]: http://jeffgran.com/img/du_logo-180x180.gif "DU Logo"
+Yesterday was my first day of classes at the University of Denver. I’m entering into the Information and Communications Technology program. I’m excited to start learning, and it’s interesting (and validating my decision) that I’m already learning things that I never even knew I needed to know.
+
+ [1]: /img/du_logo-180x180.gif "DU Logo"
 
 Next quarter will be more about specific techniques (javascript, for example), but so far this quarter is focused on things like the Software Development Life Cycle, Requirements and Use Case gathering, object oriented analysis and design, etc.
 

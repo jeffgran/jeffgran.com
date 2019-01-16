@@ -7,9 +7,11 @@ tags: book-review javascript jQuery
 ---
 # Book Review: Javascript: The Missing Manual
 
-![js_mm_cover][1]In my ongoing efforts to realize my dreams of becoming a true web ninja, I recently read [*Javascript: The Missing Manual*][2] by [David Sawyer MacFarland][3].  I had read his previous book in the Missing Manuals series on CSS, and had both enjoyed it and learned a lot from it.
+![js_mm_cover][1]
 
- [1]: http://jeffgran.com/img/js_mm_cover.png "js_mm_cover"
+In my ongoing efforts to realize my dreams of becoming a true web ninja, I recently read [*Javascript: The Missing Manual*][2] by [David Sawyer MacFarland][3].  I had read his previous book in the Missing Manuals series on CSS, and had both enjoyed it and learned a lot from it.
+
+ [1]: /img/js_mm_cover.png "js_mm_cover"
  [2]: http://www.amazon.com/gp/product/0596515898 "Javascript: The Missing Manual"
  [3]: http://www.sawmac.com "David Sawyer MacFarland"
 

@@ -28,9 +28,8 @@ wp_list_bookmarks(
    'categorize=0&title_li=&show_images=1&show_description=1');
 ~~~~
 
-Pretty good, but what if I want even more control (I usually do ![;)][1] )?  The next-deepest level of under-the-hood-ness allows you to get the list of links, store it in an array, and then loop through the array using a simple PHP foreach loop that outputs the link data in whatever custom format you need.  It’s easier than it sounds.  Here’s the final code I used for my links page:
+Pretty good, but what if I want even more control (I usually do ;) )?  The next-deepest level of under-the-hood-ness allows you to get the list of links, store it in an array, and then loop through the array using a simple PHP foreach loop that outputs the link data in whatever custom format you need.  It’s easier than it sounds.  Here’s the final code I used for my links page:
 
- [1]: http://jeffgran.com/wp-includes/images/smilies/icon_wink.gif
 
 ~~~~ php
 <?php

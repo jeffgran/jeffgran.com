@@ -12,11 +12,9 @@ tags: PHP Web WordPress
 
 Because my previous post ([WordPress: Sort Posts by Multiple Fields][1]) was one of my most popular posts, and because I have realized since then that the solution it proposes is an inadequate one, I felt the need to write an update. I don’t want to be spreading bad information, and for a blog with any significant number of posts, that solution is untenable.
 
- [1]: http://jeffgran.com/218/blog/wordpress-sort-posts-by-multiple-fields "WordPress: Sort Posts by Multiple Fields"
+ [1]: /218/blog/wordpress-sort-posts-by-multiple-fields "WordPress: Sort Posts by Multiple Fields"
 
-As [progzy][2] points out, sorting by multiple fields can be accomplished using the \`posts_orderby\` filter hook, which uses MySQL directly to sort the posts, instead of getting all the posts from the database into a gigantic array, and then sorting them with php code. Here’s how to do it.
-
- [2]: http://jeffgran.com/218/blog/wordpress-sort-posts-by-multiple-fields#comment-254 "WordPress: Sort Posts by Multiple Fields"
+As a commenter pointed out, sorting by multiple fields can be accomplished using the \`posts_orderby\` filter hook, which uses MySQL directly to sort the posts, instead of getting all the posts from the database into a gigantic array, and then sorting them with php code. Here’s how to do it.
 
 ### Writing an orderby Function
 

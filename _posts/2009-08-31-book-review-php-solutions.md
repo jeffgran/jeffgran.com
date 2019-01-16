@@ -7,9 +7,11 @@ tags: book-review PHP Web
 ---
 # Book Review: PHP Solutions
 
-![PHP Solutions: Dynamic Web Design Made Easy][1]In my quest to expand my knowledge of the web industry, I knew I needed to understand more PHP.  PHP is one of the (if not *the*) most popular languages used on the web today.  I had been exposed to it a little, and I have experience with other C-ish syntax languages, but I needed to brush up on the fundamentals and the unique qualities of PHP.
+![PHP Solutions: Dynamic Web Design Made Easy][1]
 
- [1]: http://jeffgran.com/img/php_solutions.jpg "php_solutions"
+In my quest to expand my knowledge of the web industry, I knew I needed to understand more PHP.  PHP is one of the (if not *the*) most popular languages used on the web today.  I had been exposed to it a little, and I have experience with other C-ish syntax languages, but I needed to brush up on the fundamentals and the unique qualities of PHP.
+
+ [1]: /img/php_solutions.jpg "php_solutions"
 
 I chose *PHP Solutions: Dynamic Web Design Made Easy* because I wanted to have some real-world projects to play with as I learned the language, as opposed to just the dry information.  The book delivered in that respect.  As per the name, the book focuses on specific needs and solutions for those needs using PHP and MySQL.  I got to see how PHP works with forms and databases, and how these techniques could be applied in a simple database-driven blog, for example.
 
