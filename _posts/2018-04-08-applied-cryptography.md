@@ -2,7 +2,7 @@
 title: My Self-Study Plan for Applied Cryptography
 author: Jeff Gran
 layout: post
-
+tags: cryptography
 ---
 
 # My interest in Cryptography
