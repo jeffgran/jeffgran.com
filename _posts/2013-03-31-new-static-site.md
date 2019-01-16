@@ -6,11 +6,11 @@ tags: announcement clojure lisp emacs
 ---
 # New Static Site
 
-I just migrated from WordPress to a staticly-generated site, using a nifty little site generator called "[static][]" written in [clojure][].
+I just migrated from WordPress to a staticly-generated site, using a nifty little site generator called "[static][]" written in clojure.
 
 I've really fallen in love with lisp lately, and since clojure is the hot new lisp dialect I thought I'd find an excuse to learn and use it. So here we are.
 
-My templates are now written in clojure (hiccup), and my posts and pages are written in markdown. It's a beautiful thing, because now I can write my posts in markdown inside [emacs][]
+My templates are now written in clojure (hiccup), and my posts and pages are written in markdown. It's a beautiful thing, because now I can write my posts in markdown inside emacs
 
 My favorite thing about clojure so far might be [hiccup][], which is an html-generation library. It lets you write html structure with a lisp-y nested syntax.
 
@@ -43,6 +43,4 @@ Anyway, this makes it so much easier to update my site (just write a new markdow
 
 
 [static]: http://nakkaya.com/static.html
-[clojure]: /tags/index.html#clojure
-[emacs]: /tags/index.html#emacs
 [hiccup]: https://github.com/weavejester/hiccup
