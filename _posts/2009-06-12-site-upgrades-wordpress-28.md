@@ -3,7 +3,6 @@ title: "Site Upgrades: WordPress 2.8"
 author: Jeff Gran
 layout: post
 excerpt: "WordPress 2.8 was released on Wednesday, and I've upgraded my site."
-permalink: /163/blog/site-upgrades-wordpress-28
 tags: announcement WordPress
 ---
 # Site Upgrades: WordPress 2.8

@@ -2,7 +2,6 @@
 title: 'WordPress: Custom Links Display'
 author: Jeff Gran
 layout: post
-permalink: /38/blog/wordpress-custom-links-display
 categories:
   - Blog
 tags: PHP Web WordPress

@@ -6,7 +6,6 @@ excerpt: |
   WordPress hs a simple checkbox in the Admin->Settings panel that lets you set a certain file to be the "static" home page instead of the default listing of the latest posts.
 
   I'm going to show you how (and why) I did NOT use that feature to create my customized home page.
-permalink: /139/blog/wordpress-custom-home-page
 tags: PHP Web WordPress
 ---
 # WordPress: Using a custom home page

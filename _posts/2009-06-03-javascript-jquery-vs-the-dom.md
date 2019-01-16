@@ -3,7 +3,6 @@ title: Javascript vs. jQuery vs. the DOM
 author: Jeff Gran
 layout: post
 excerpt: "When I first started learning about Javascript, it took me a little while before I could wrap my head around the distinctions and relationships between Javascript, jQuery and the DOM.  So I thought I would lay out what I've learned so that it might help someone where I was."
-permalink: /156/blog/javascript-jquery-vs-the-dom
 tags: javascript jQuery Web
 ---
 # Javascript vs. jQuery vs. the DOM

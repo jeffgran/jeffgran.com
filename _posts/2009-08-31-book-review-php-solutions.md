@@ -2,7 +2,6 @@
 title: "Book Review: PHP Solutions"
 author: Jeff Gran
 layout: post
-permalink: /230/blog/book-review-php-solutions
 tags: book-review PHP Web
 ---
 # Book Review: PHP Solutions

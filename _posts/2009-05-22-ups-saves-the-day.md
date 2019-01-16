@@ -2,7 +2,6 @@
 title: UPS saves the day
 author: Jeff Gran
 layout: post
-permalink: /150/blog/ups-saves-the-day
 tags: life
 ---
 # UPS saves the day

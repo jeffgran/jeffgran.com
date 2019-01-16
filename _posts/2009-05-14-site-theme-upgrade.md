@@ -4,7 +4,6 @@ author: Jeff Gran
 layout: post
 excerpt: |
   I've "gone live" with the theme upgrade I've been working on.  This represents a week's worth of work or so.
-permalink: /134/blog/site-theme-upgrade
 tags: announcement design WordPress
 ---
 # Site Theme Upgrade

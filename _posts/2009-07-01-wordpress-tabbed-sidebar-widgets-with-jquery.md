@@ -3,7 +3,6 @@ title: "WordPress: Tabbed Sidebar Widgets with jQuery"
 author: Jeff Gran
 layout: post
 excerpt: "Tabs are a great way to show more information in less space, assuming the initially-hidden tabs are non-essential information.  Recently a client asked me to put a few Wordpress widgets into a single tabbed container in the sidebar.  Here's how I did it."
-permalink: /180/blog/wordpress-tabbed-sidebar-widgets-with-jquery
 tags: jQuery WordPress
 ---
 # WordPress: Tabbed Sidebar Widgets with jQuery

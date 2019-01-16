@@ -2,7 +2,6 @@
 title: We're online!
 author: Jeff Gran
 layout: post
-permalink: /1/blog/were-online
 tags: announcement
 ---
 # We're online!

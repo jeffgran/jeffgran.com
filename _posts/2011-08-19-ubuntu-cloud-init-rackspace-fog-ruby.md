@@ -2,7 +2,6 @@
 title: Bootstrapping an Ubuntu Server on Rackspace Using Cloud-Init and Fog
 author: Jeff Gran
 layout: post
-permalink: /276/blog/ubuntu-cloud-init-rackspace-fog-ruby
 tags: ruby cloud Web
 ---
 # Bootstrapping an Ubuntu Server on Rackspace Using Cloud-Init and Fog

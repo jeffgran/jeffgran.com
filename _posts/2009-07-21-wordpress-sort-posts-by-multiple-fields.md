@@ -2,7 +2,6 @@
 title: "WordPress: Sort Posts by Multiple Fields"
 author: Jeff Gran
 layout: post
-permalink: /218/blog/wordpress-sort-posts-by-multiple-fields
 tags: PHP WordPress
 ---
 # WordPress: Sort Posts by Multiple Fields

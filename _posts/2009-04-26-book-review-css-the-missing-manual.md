@@ -2,7 +2,6 @@
 title: "Book Review: CSS: The Missing Manual"
 author: Jeff Gran
 layout: post
-permalink: /62/blog/book-review-css-the-missing-manual
 tags: book-review Web
 ---
 # Book Review: CSS: The Missing Manual

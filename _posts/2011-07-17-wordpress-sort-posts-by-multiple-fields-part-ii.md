@@ -3,7 +3,6 @@ title: "WordPress: Sort Posts by Multiple Fields (Part II)"
 author: Jeff Gran
 layout: post
 excerpt: "Here's a fast and easy way to sort your posts by multiple fields, using the posts_orderby filter hook and a simple function."
-permalink: /262/blog/wordpress-sort-posts-by-multiple-fields-part-ii
 tags: PHP Web WordPress
 ---
 # WordPress: Sort Posts by Multiple Fields (Part II)

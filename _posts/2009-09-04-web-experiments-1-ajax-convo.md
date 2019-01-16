@@ -2,7 +2,6 @@
 title: "A Web Experiment: \"Ajax Convo\""
 author: Jeff Gran
 layout: post
-permalink: /239/blog/web-experiments-1-ajax-convo
 tags: AJAX javascript jQuery PHP Web
 ---
 # A Web Experiment: "Ajax Convo"

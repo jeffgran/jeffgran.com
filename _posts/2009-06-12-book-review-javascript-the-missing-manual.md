@@ -2,7 +2,6 @@
 title: "Book Review: Javascript: The Missing Manual"
 author: Jeff Gran
 layout: post
-permalink: /161/blog/book-review-javascript-the-missing-manual
 tags: book-review javascript jQuery
 ---
 # Book Review: Javascript: The Missing Manual

@@ -2,7 +2,6 @@
 title: "Quick Tip: Bash Script for Running RSpec Tests Under Rails"
 author: Jeff Gran
 layout: post
-permalink: /309/blog/quick-tip-bash-script-for-running-rspec-tests-under-rails
 tags: ruby bash
 ---
 # Quick Tip: Bash Script for Running RSpec Tests Under Rails

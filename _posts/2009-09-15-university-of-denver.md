@@ -2,7 +2,6 @@
 title: University of Denver
 author: Jeff Gran
 layout: post
-permalink: /247/blog/university-of-denver
 tags: announcement
 ---
 # University of Denver

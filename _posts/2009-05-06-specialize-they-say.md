@@ -2,7 +2,6 @@
 title: Specialize, they say
 author: Jeff Gran
 layout: post
-permalink: /119/blog/specialize-they-say
 tags: announcement Web WordPress
 ---
 # Specialize, they say
