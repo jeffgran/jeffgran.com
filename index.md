@@ -16,6 +16,8 @@ I'm Jeff.
 * I live in Colorado Springs, CO, USA. I work remotely.
 * Sometimes I feel like writing about a thought I had or something I learned. [So I put it here](/blog.html).
 
+And that's about all I have to say about that.
+
 [projects page]: /projects.html
 [emacs]: http://www.gnu.org/software/emacs/
 [conkeror]: http://conkeror.org/
