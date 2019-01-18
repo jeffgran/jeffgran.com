@@ -57,7 +57,7 @@ I want to have a deeper understanding of the math behind cryptography.
 
 Cryptographic methods, protocols, history, etc. The meat.
 
-- **~~[Coursera 4-course "Specialization": "Introduction to Applied Cryptography" by University of Colorado](https://www.coursera.org/specializations/introduction-applied-cryptography)~~ -- Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/specialization/SMHX4NSHFSRD)**
+- **~~["Introduction to Applied Cryptography" by University of Colorado (Coursera 4-course "Specialization")](https://www.coursera.org/specializations/introduction-applied-cryptography)~~ -- Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/specialization/SMHX4NSHFSRD)**
   - ~~Classical Cryptosystems and Core Concepts~~
     - Finished [(Coursera Certificate)](https://www.coursera.org/account/accomplishments/records/UF2XEQPE8FXB)
   - ~~Mathematical Foundations for Cryptography~~
@@ -83,5 +83,6 @@ C++ seems to be the lingua franca of cryptography so I need to get a little more
 
 I want to brush up on the details of network protocols and network security. I know enough to do my job as a web developer, but I want to study the details more closely.
 
-- [Coursera 4-course "Specialization": "Computer Communications" by University of Colorado](https://www.coursera.org/specializations/computer-communications)
-- [Coursera 4-course "Specialization": "Fundamentals of Computer Network Security" by University of Colorado](https://www.coursera.org/specializations/computer-network-security)
+- ["Computer Communications" by University of Colorado (Coursera 4-course "Specialization")](https://www.coursera.org/specializations/computer-communications)
+  - or maybe [Cisco Networking Basics (Coursera 5-course "Specialization")](https://www.coursera.org/specializations/networking-basics)
+- ["Fundamentals of Computer Network Security" by University of Colorado (Coursera 4-course "Specialization")](https://www.coursera.org/specializations/computer-network-security)

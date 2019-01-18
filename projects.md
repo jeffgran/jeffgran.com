@@ -110,6 +110,10 @@ So anyway I decided to use that opportunity to write some rust. So here are some
 
 I still want to get back to this and go through the other 3 courses in the series.
 
+### krs (Crypto Homework Helper Functions) [(github)](https://github.com/jeffgran/krs)
+
+This is just a little toy program I wrote in rust while going through the Coursera cryptography courses. It implements some algorithms we learned in that class and has a CLI interface. I mostly wrote this for some practice with rust and to help me do the homework problems without doing this math by hand.
+
 ## Elixir
 
 ### Aho-Corasick [(github)](https://github.com/jeffgran/aho_corasick.ex)
