@@ -83,6 +83,6 @@ C++ seems to be the lingua franca of cryptography so I need to get a little more
 
 I want to brush up on the details of network protocols and network security. I know enough to do my job as a web developer, but I want to study the details more closely.
 
-- ["Computer Communications" by University of Colorado (Coursera 4-course "Specialization")](https://www.coursera.org/specializations/computer-communications)
-  - or maybe [Cisco Networking Basics (Coursera 5-course "Specialization")](https://www.coursera.org/specializations/networking-basics)
-- ["Fundamentals of Computer Network Security" by University of Colorado (Coursera 4-course "Specialization")](https://www.coursera.org/specializations/computer-network-security)
+- [Introduction to Computer Networking: Self-Paced online course by Stanford University](https://lagunita.stanford.edu/courses/Engineering/Networking-SP/SelfPaced/about)
+  - In Progress
+  - Covers the new 4-layer OSI model, TCP/IP (and other transport protocols), packet switching, routing and congestion control, NAT, etc.
