@@ -85,4 +85,4 @@ I want to brush up on the details of network protocols and network security. I k
 
 - [Introduction to Computer Networking: Self-Paced online course by Stanford University](https://lagunita.stanford.edu/courses/Engineering/Networking-SP/SelfPaced/about)
   - In Progress
-  - Covers the new 4-layer OSI model, TCP/IP (and other transport protocols), packet switching, routing and congestion control, NAT, etc.
+  - Covers the OSI model, TCP/IP (and other transport protocols), packet switching, routing and congestion control, NAT, etc.
