@@ -14,15 +14,12 @@ resource "aws_route53_zone" "jeffgran-com" {
   name = "jeffgran.com"
 }
 
-resource "aws_route53_record" "naked" {
+resource "aws_route53_record" "www" {
   zone_id = aws_route53_zone.jeffgran-com.zone_id
-  name    = "jeffgran.com."
-  type    = "A"
-  alias {
-    name = "www.jeffgran.com"
-    zone_id = aws_route53_zone.jeffgran-com.zone_id
-    evaluate_target_health = false
-  }
+  name    = "www.jeffgran.com."
+  type    = "CNAME"
+  ttl = 300
+  records = ["jeffgran.com.s3-website.us-west-1.amazonaws.com"]
 }
 
 
@@ -31,7 +28,7 @@ module "website" {
   namespace      = "jg"
   stage          = "prod"
   name           = "jeffgran.com"
-  hostname       = "www.jeffgran.com"
+  hostname       = "jeffgran.com"
   region         = "us-west-1"
   parent_zone_id = aws_route53_zone.jeffgran-com.zone_id
 }
