@@ -32,8 +32,11 @@ plugins:
 # to override the default setting.
 exclude:
   - OLD-clj-site/
-#   - Gemfile
-#   - Gemfile.lock
+  - Gemfile
+  - Gemfile.lock
+  - deploy.sh
+  - terraform
+  - README.md
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
