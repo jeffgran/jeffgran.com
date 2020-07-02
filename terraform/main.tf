@@ -16,29 +16,24 @@ resource "aws_route53_zone" "jeffgran-com" {
 
 resource "aws_route53_record" "naked" {
   zone_id = aws_route53_zone.jeffgran-com.zone_id
-  name = "jeffgran.com."
-  type = "A"
-  ttl = "300"
-  records = ["162.241.226.160"]
+  name    = "jeffgran.com."
+  type    = "A"
+  alias {
+    name = "www.jeffgran.com"
+    zone_id = aws_route53_zone.jeffgran-com.zone_id
+    evaluate_target_health = false
+  }
 }
-
-resource "aws_route53_record" "www" {
-  zone_id = aws_route53_zone.jeffgran-com.zone_id
-  name = "www.jeffgran.com."
-  type = "CNAME"
-  ttl = "300"
-  records = ["jeffgran.com"]
-}
-
 
 
 module "website" {
-  source    = "git::https://github.com/cloudposse/terraform-aws-s3-website.git?ref=tags/0.9.0"
-  namespace = "jg"
-  stage     = "prod"
-  name      = "jeffgran.com"
-  hostname  = "www.jeffgran.com"
-  region    = "us-west-1"
+  source         = "git::https://github.com/cloudposse/terraform-aws-s3-website.git?ref=tags/0.9.0"
+  namespace      = "jg"
+  stage          = "prod"
+  name           = "jeffgran.com"
+  hostname       = "www.jeffgran.com"
+  region         = "us-west-1"
+  parent_zone_id = aws_route53_zone.jeffgran-com.zone_id
 }
 
 output "domain_name" {
