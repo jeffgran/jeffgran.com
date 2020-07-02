@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
-shopt -s dotglob
-jekyll build && scp -r ./_site/* jeffgran.com:www/jeffgran/
+
+jekyll build && aws s3 sync ./_site/ s3://www.jeffgran.com --delete

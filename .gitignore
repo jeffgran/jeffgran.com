@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .DS_Store
+.terraform
 
 # old
 pom.xml
