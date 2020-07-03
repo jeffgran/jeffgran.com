@@ -26,24 +26,16 @@ resource "aws_route53_zone" "jeffgran-com" {
 }
 
 module "website" {
-  source         = "git::https://github.com/cloudposse/terraform-aws-s3-website.git?ref=tags/0.9.0"
-  namespace      = local.namespace
-  stage          = local.stage
-  name           = local.domain_name
-  hostname       = local.domain_name
-  region         = "us-west-1"
-  parent_zone_id = aws_route53_zone.jeffgran-com.zone_id
-}
-
-module "www_website" {
-  source                   = "git::https://github.com/cloudposse/terraform-aws-s3-website.git?ref=tags/0.9.0"
-  namespace                = local.namespace
-  stage                    = local.stage
-  name                     = "www.${local.domain_name}"
-  hostname                 = "www.${local.domain_name}"
-  region                   = "us-west-1"
-  parent_zone_id           = aws_route53_zone.jeffgran-com.zone_id
-  redirect_all_requests_to = local.domain_name
+  source              = "git::https://github.com/cloudposse/terraform-aws-cloudfront-s3-cdn.git?ref=tags/0.26.0"
+  namespace           = local.namespace
+  stage               = local.stage
+  name                = local.domain_name
+  allowed_methods     = ["GET", "HEAD"]
+  compress            = true
+  parent_zone_id      = aws_route53_zone.jeffgran-com.zone_id
+  acm_certificate_arn = module.cert.arn
+  website_enabled     = true
+  aliases             = ["jeffgran.com", "www.jeffgran.com"]
 }
 
 module "cert" {
@@ -59,8 +51,6 @@ module "cert" {
 }
 
 
-
-
-output "domain_name" {
-  value = module.website.s3_bucket_domain_name
+output "origin_s3_bucket" {
+  value = module.website.s3_bucket
 }
