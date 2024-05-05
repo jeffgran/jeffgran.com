@@ -42,3 +42,8 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# quiet some deprecation warnings from the minima theme's sass: https://github.com/jekyll/minima/issues/709
+sass:
+  quiet_deps: true

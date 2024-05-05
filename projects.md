@@ -86,6 +86,12 @@ This is a javascript rewrite of a piece of C code written by a man named Warren 
 
 I never finished it.
 
+## Golang
+
+### terraform-provider-defectdojo [(github)](https://github.com/doximity/terraform-provider-defectdojo)
+
+I wrote a terraform provider for the [Defect Dojo](https://github.com/DefectDojo/django-DefectDojo) OWASP project. We were using DefectDojo at work and we wanted to integrate it with our terraform code but there was no provider, so I wrote it.
+
 ## Emacs Lisp
 
 ### jg-quicknav [(github)](https://github.com/jeffgran/jg-quicknav) [(blog post)](/2013/04/02/introducing-jg-quicknav.html)
