@@ -9,6 +9,16 @@ This page highlights open source projects I've built or contributed to.
 
 Many of them are unfinished, because... well because I have a job and a family and I don't have much time for hobby projects. Maybe when I retire.
 
+## CodeQL
+
+### GraphQL-Ruby [(github)](https://github.com/github/codeql/pulls?q=is%3Apr+is%3Aclosed+author%3Ajeffgran)
+
+CodeQL is a fascinating piece of technology that is now owned and maintained by GitHub, as part of their Advanced Security product. I got interested in CodeQL around 2021, and tried to get the company I was working for to adopt it so we could start using it to write custom CodeQL queries to find security vulnerabilities in our Ruby on Rails codebases. 
+
+It turned out that the Ruby support was not mature enough at the time to warrant the spend, but during our trial process I tried my hardest to bend it to my will. 
+
+I ended up contributing a patch that added support for the popular [`graphql-ruby`](https://graphql-ruby.org/) to the ruby CodeQL frameworks libraries. This means that I added helper code that understands the application code in an application that integrates the `graphql-ruby` library, so that other custom CodeQL queries can now build on that and catch vulnerabilities involving graphql resolvers in Ruby applications.
+
 ## Ruby
 
 ### CodeDoc [(github)](https://github.com/jeffgran/code_doc)
@@ -38,6 +48,8 @@ end
 ```
 
 And could output the args, return value, and description in various formats. Taken to a crazy enough level this could actually end up as a static type checker... but the first plan was to make the ruby VM throw warnings and/or exceptions if you forgot to add docs, to enforce a documentation habit.
+
+Shower thought years and years later... this is kind of what Sorbet turned out to be... :thinking:
 
 
 ### Gangsta [(github)](https://github.com/jeffgran/Gangsta)
